@@ -1,1 +1,38 @@
+#include<bits/stdc++.h>
+using namespace std;
 
+int main(){
+
+    int t;
+    cin>>t;
+
+    for(int i=0;i<t;i++){
+        int x1,x2,x3;
+        int mx=0;
+        cin>>x1>>x2>>x3;
+        int ar[]={x1,x2,x3};
+        for (int j=0;j<3;j++){
+            if(ar[j]>=mx){
+                mx=ar[j];
+            }
+        }
+        if (mx>50){
+            if(mx==x1){
+                cout<<"A\n";
+            }
+            else if(mx==x2){
+                cout<<"B\n";
+            }
+            else if(mx==x3){
+                cout<<"C\n";
+
+            }
+        }
+        else{
+            cout<<"NOTA\n";
+        }
+
+    }
+
+    return 0;
+}
